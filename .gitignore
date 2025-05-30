@@ -1,4 +1,4 @@
 .venv
 .env
 .idea
-/static
+__pycache__/
