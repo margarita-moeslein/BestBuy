@@ -3,6 +3,16 @@ import products
 import store
 
 
+MENU = '''
+STORE MENU
+----------
+1. List all products in the store
+2. Show total amount in the store
+3. Make an order
+4. Quit
+'''
+
+
 def show_all_products(products_list: List[products.Product]) -> None:
     """
     Display all products in a numbered list.
@@ -25,15 +35,8 @@ def start(store_instance: store.Store) -> None:
     """
     while True:
         # Display menu
-        print("\nStore Menu")
-        print("----------")
-        print("1. List all products in store")
-        print("2. Show total amount in store")
-        print("3. Make an order")
-        print("4. Quit")
-
-
         try:
+            print(MENU)
             choice = int(input("Please choose a number: "))
         except ValueError:
             print("Error with your choice! Try again!")
