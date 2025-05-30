@@ -108,9 +108,6 @@ def start(store_instance: store.Store) -> None:
 
 
 def main() -> None:
-    """
-    Main function to set up the store and start the interface.
-    """
     # Setup initial stock of inventory as specified
     product_list = [
         products.Product("MacBook Air M2", price=1450, quantity=100),
